@@ -69,7 +69,7 @@ export default function News() {
       </svg></button>
         <h1 className='text-black font-bold lg:text-4xl md:text-2xl text-xl text-center'>{loading?'Loading ':''}{search!==''?`Top ${search} headlines in India`:topic==='india'?'Top headlines in India':`Top ${topic} headlines in India`}</h1>
         {loading&&<Loading/>}
-        <div className=' lg:py-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols1 py-5 lg:gap-10 md:gap-5 gap-2'>
+        <div className=' lg:py-10 grid grid-flow-row-dense lg:grid-cols-3 md:grid-cols-2 grid-cols1 py-5 lg:gap-10 md:gap-5 gap-2'>
             {content}
         </div>
     </div>

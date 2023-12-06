@@ -33,7 +33,7 @@ export default function Navbar() {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <div className="block items-center">
       {/* <img src="" className="h-8 mr-3" alt=" Logo" /> */}
-      <span className="self-center lg:text-2xl text-lg font-semibold whitespace-nowrap text-white">NewsDekho2.0</span>
+      <a href='/' className="self-center lg:text-2xl text-lg font-semibold whitespace-nowrap cursor-pointer text-white">NewsDekho2.0</a>
   </div>
   <div className={`flex ${show?'lg:w-2/3 w-3/5':''} md:order-2 gap-5 transition-all`}>
     {show&&<div className="relative w-full md:block">
